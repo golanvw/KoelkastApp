@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KoelkastApp.LoginPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Inloggen"
+                HorizontalOptions="CenterAndExpand" />
+            <Label
+                x:Name="Error"
+                Text=""
+                TextColor="Red"/>
+            <Entry
+                x:Name="Username"
+                Text="Gebruikersnaam"/>
+            <Entry
+                x:Name="Password"
+                Text="Wachtwoord"/>
+
+            <Button
+                x:Name="LoginBtn"
+                Clicked="LoginBtn_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
