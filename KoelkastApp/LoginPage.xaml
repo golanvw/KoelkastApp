@@ -9,16 +9,19 @@
             <Label
                 x:Name="Error"
                 Text=""
-                TextColor="Red"/>
+                TextColor="Red"
+                HorizontalOptions="CenterAndExpand"/>
             <Entry
                 x:Name="Username"
-                Text="Gebruikersnaam"/>
+                Placeholder="Gebruikersnaam"/>
             <Entry
                 x:Name="Password"
-                Text="Wachtwoord"/>
+                Placeholder="Wachtwoord"
+                IsPassword="True"/>
 
             <Button
                 x:Name="LoginBtn"
+                Text="Inloggen"
                 Clicked="LoginBtn_Clicked"/>
         </StackLayout>
     </ContentPage.Content>

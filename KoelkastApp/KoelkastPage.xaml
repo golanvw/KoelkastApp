@@ -4,9 +4,19 @@
              x:Class="KoelkastApp.KoelkastPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
+            <Label 
+                x:Name="Username"
+                Text=""
+                FontSize="Large"
+                FontAttributes="Bold"
                 HorizontalOptions="CenterAndExpand" />
+            
+            <Button
+                x:Name="AddKoelkastBtn"
+                Text="+ koelkast toevoegen"/>
+            <Button
+                x:Name="CreateKoelkastBtn"
+                Text="+ Nieuwe koelkast maken"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -10,8 +10,8 @@
 
         private void LoginBtn_Clicked(object sender, EventArgs e)
         {
-            if (Username.Text == "admin" && Password.Text == "admin")
-                Navigation.PushAsync(new KoelkastPage());
+            if (Password.Text == "admin")
+                Navigation.PushAsync(new KoelkastPage(Username.Text));
             else
                 Error.Text = "Gebruikersnaam en wachtwoord zijn niet correct";
         }

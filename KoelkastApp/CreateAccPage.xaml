@@ -4,10 +4,24 @@
              x:Class="KoelkastApp.CreateAccPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Account aanmaken"
+            <Label Text="Inloggen"
                 HorizontalOptions="CenterAndExpand" />
             <Label
-                Text="bananensapcentrifuge"/>
+                x:Name="Error"
+                Text=""
+                TextColor="Red"
+                HorizontalOptions="CenterAndExpand"/>
+            <Entry
+                x:Name="Username"
+                Placeholder="Gebruikersnaam"/>
+            <Entry
+                x:Name="Password"
+                Placeholder="Wachtwoord"
+                IsPassword="True"/>
+            <Button
+                x:Name="CreateAccBtn"
+                Text="Account aanmaken"
+                Clicked="CreateAccBtn_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

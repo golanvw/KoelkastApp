@@ -7,5 +7,10 @@
         {
             InitializeComponent();
         }
+
+        private void CreateAccBtn_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new KoelkastPage(Username.Text));
+        }
     }
 }
