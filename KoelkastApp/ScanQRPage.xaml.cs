@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ZXing.Net.Maui;
 
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
+
 
 namespace KoelkastApp
 {
@@ -15,6 +15,12 @@ namespace KoelkastApp
         public ScanQRPage()
         {
             InitializeComponent();
+        }
+
+        protected void BarcodesDetected(object sender, BarcodeDetectionEventArgs e)
+        {
+            foreach (var barcode in e.Results)
+                Console.WriteLine($"Barcodes: {barcode.Format} -> {barcode.Value}");
         }
     }
 }

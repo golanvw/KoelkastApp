@@ -13,7 +13,8 @@
             
             <Button
                 x:Name="AddKoelkastBtn"
-                Text="+ koelkast toevoegen"/>
+                Text="+ koelkast toevoegen"
+                Clicked="AddKoelkastBtn_Clicked"/>
             <Button
                 x:Name="CreateKoelkastBtn"
                 Text="+ Nieuwe koelkast maken"/>

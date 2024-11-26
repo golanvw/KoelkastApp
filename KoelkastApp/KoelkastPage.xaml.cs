@@ -13,5 +13,10 @@
         {
             //idee (credits=Rob) koelkast gps coordinaten toevoegen om automatisch de juiste koelkast te gebruiken
         }
+
+        private void AddKoelkastBtn_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ScanQRPage());
+        }
     }
 }
