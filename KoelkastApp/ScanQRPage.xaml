@@ -8,6 +8,10 @@
             <zxing:CameraBarcodeReaderView
                 x:Name="cameraBarcodeReaderView"
                 BarcodesDetected="BarcodesDetected" />
+            <Button
+                x:Name="NavigateBtn"
+                Text="Simuleer QR scan"
+                Clicked="NavigateBtn_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

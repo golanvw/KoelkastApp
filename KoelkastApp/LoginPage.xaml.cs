@@ -3,6 +3,7 @@
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class LoginPage : ContentPage
     {
+        
         public LoginPage()
         {
             InitializeComponent();
@@ -15,5 +16,7 @@
             else
                 Error.Text = "Gebruikersnaam en wachtwoord zijn niet correct";
         }
+        
+        
     }
 }

@@ -3,6 +3,7 @@
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class KoelkastPage : ContentPage
     {
+        string NavigationTarget = "Koelkast";
         public KoelkastPage(string a)
         {
             InitializeComponent();
@@ -16,7 +17,7 @@
 
         private void AddKoelkastBtn_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new ScanQRPage());
+            Navigation.PushAsync(new ScanQRPage(NavigationTarget));
         }
     }
 }
