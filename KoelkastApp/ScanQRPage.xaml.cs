@@ -12,13 +12,13 @@ namespace KoelkastApp
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ScanQRPage : ContentPage
     {
-        string NavigationTarget;
+        string NavigationTarget {get; set;}
         public ScanQRPage(string a)
         {
             InitializeComponent();
-            string NavigationTarget = a;
+            NavigationTarget = a;
         }
-
+        
         protected void BarcodesDetected(object sender, BarcodeDetectionEventArgs e)
         {
             foreach (var barcode in e.Results)
@@ -29,7 +29,7 @@ namespace KoelkastApp
         {
             if (NavigationTarget == "Koelkast")
                 Navigation.PushAsync(new KoelkastPage(NavigationTarget));
-            if (NavigationTarget == "Bijvullen")
+            else if (NavigationTarget == "Bijvullen")
                 Navigation.PushAsync(new FillPage());
             else
                 Navigation.PushAsync(new UsePage());

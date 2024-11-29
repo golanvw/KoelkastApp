@@ -4,9 +4,10 @@
              x:Class="KoelkastApp.FillPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Button
+                x:Name="SaveFillBtn"
+                Text="bijvullen"
+                Clicked="SaveFillBtn_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

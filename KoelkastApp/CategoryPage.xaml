@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KoelkastApp.CategoryPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Button
+                x:Name="CategoryBtn"
+                Text="categorie 1"
+                Clicked="CategoryBtn_Clicked"/>
+            <Button
+                x:Name="SettingsBtn"
+                Text="instellingen"
+                Clicked="SettingsBtn_Clicked"/>
+            <Button
+                x:Name="CreateCatergoryBtn"
+                Text="+ maak nieuwe categorie"
+                Clicked="CreateCatergoryBtn_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

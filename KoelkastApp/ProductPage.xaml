@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KoelkastApp.ProductPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Button
+                x:Name="SettingsBtn"
+                Text="instellingen"
+                Clicked="SettingsBtn_Clicked"/>
+            <Button
+                x:Name="FillBtn"
+                Text="Bijvullen"
+                Clicked="FillBtn_Clicked"/>
+            <Button
+                x:Name="UseBtn"
+                Text="verbruiken"
+                Clicked="UseBtn_Clicked"/>
+            <Button
+                x:Name="CreateProductBtn"
+                Text="+ nieuw product"
+                Clicked="CreateProductBtn_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

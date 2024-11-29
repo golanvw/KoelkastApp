@@ -13,5 +13,10 @@ namespace KoelkastApp
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private void SaveFillBtn_Clicked(object sender, EventArgs e)
+        {
+			Navigation.PushAsync(new ProductPage());
+        }
+    }
 }

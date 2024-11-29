@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 namespace KoelkastApp
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class UsePage : ContentPage
+	public partial class CreateProductPage : ContentPage
 	{
-		public UsePage ()
+		public CreateProductPage ()
 		{
 			InitializeComponent ();
 		}
 
-        private void SaveUseBtn_Clicked(object sender, EventArgs e)
+        private void CreateBtn_Clicked(object sender, EventArgs e)
         {
 			Navigation.PushAsync(new ProductPage());
         }
