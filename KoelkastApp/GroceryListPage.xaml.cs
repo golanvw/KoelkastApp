@@ -13,5 +13,10 @@ namespace KoelkastApp
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private void RefillBtn_Clicked(object sender, EventArgs e)
+        {
+
+        }
+    }
 }

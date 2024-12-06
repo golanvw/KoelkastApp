@@ -4,47 +4,106 @@
              x:Class="KoelkastApp.KoelkastPage">
     <ContentPage.ToolbarItems>
         <ToolbarItem
+            x:Name="Username"
+            Text=""/>
+        <ToolbarItem
             x:Name="AccountSettingBtn"
             IconImageSource="accounticon.png"
             Clicked="AccountSettingBtn_Clicked"/>
     </ContentPage.ToolbarItems>
-    <ContentPage.Content>
-        <StackLayout>
-            <Label 
-                x:Name="Username"
-                Text=""
-                FontSize="Large"
-                FontAttributes="Bold"
-                HorizontalOptions="CenterAndExpand" />
 
-            <Button
-                x:Name="GroceryListBtn"
-                Text="Boodschappenlijst"
-                Clicked="GroceryListBtn_Clicked"/>
+    <ContentView>
+        <Border 
+            Stroke="Black" 
+            StrokeThickness="2" 
+            BackgroundColor="White"  
+            StrokeShape="Rectangle">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
 
-            <Button
-                x:Name="SettingsButton"
-                Text="Instellingen"
-                Clicked="SettingsButton_Clicked"/>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
 
-            <Button
-                x:Name="RefillBtn"
-                Text="Bijvullen"
-                Clicked="RefillBtn_Clicked"/>
+                    <Button Style="{StaticResource Koelkast}"
+                        Text="koelkast 1"
+                        FontSize="20" 
+                        VerticalOptions="Center" 
+                        Margin="10,0" 
+                        Grid.Column="0"
+                        Clicked="KoelkastBtn_Clicked"/>
+                    
+                    <ImageButton
+                        Source="bonicon.png"
+                        HorizontalOptions="End"
+                        Aspect="AspectFill"
+                        Grid.Column="1"
+                        Clicked="GroceryListBtn_Clicked"/>
 
-            <Button
-                x:Name="UseBtn"
-                Text="Verbuiken"
-                Clicked="UseBtn_Clicked"/>
+                    <Button
+                        Text="★"
+                        x:Name="SettingsBtn"
+                        TextColor="Black"
+                        FontAttributes="Bold"
+                        FontSize="22"
+                        BackgroundColor="Transparent"
+                        HorizontalOptions="End"
+                        VerticalOptions="Center"
+                        Grid.Column="2"
+                        Clicked="SettingsBtn_Clicked"/>
+                </Grid>
 
-            <Button
-                x:Name="AddKoelkastBtn"
-                Text="+ koelkast toevoegen"
-                Clicked="AddKoelkastBtn_Clicked"/>
-            <Button
-                x:Name="CreateKoelkastBtn"
-                Text="+ Nieuwe koelkast maken"
-                Clicked="CreateKoelkastBtn_Clicked"/>
-        </StackLayout>
-    </ContentPage.Content>
+
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button 
+                        Text="bijvullen"
+                        x:Name="RefillBtn"
+                        TextColor="Black"
+                        BackgroundColor="White"
+                        BorderColor="Black"
+                        BorderWidth="1"
+                        Grid.Column="1"
+                        Clicked="RefillBtn_Clicked"/>
+
+                    <Button 
+                        Text="verbruiken"
+                        x:Name="UseBtn"
+                        TextColor="Black"
+                        BackgroundColor="White"
+                        BorderColor="Black"
+                        BorderWidth="1"
+                        Grid.Column="2"
+                        Clicked="UseBtn_Clicked"/>
+                </Grid>
+                <Grid Grid.Row="2">
+                    <Button
+                       x:Name="AddKoelkastBtn"
+                       Margin="0,10,0,0"
+                       Text="+ koelkast toevoegen"
+                       Clicked="AddKoelkastBtn_Clicked"/>
+                </Grid>
+                <Grid Grid.Row="3">
+                    <Button
+                        x:Name="CreateKoelkastBtn"
+                        Margin="0,10,0,0"
+                        Text="+ Nieuwe koelkast maken"
+                        Clicked="CreateKoelkastBtn_Clicked"/>
+                </Grid>
+            </Grid>
+        </Border>
+    </ContentView>
 </ContentPage>

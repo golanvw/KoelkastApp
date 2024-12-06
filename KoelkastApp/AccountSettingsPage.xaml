@@ -4,6 +4,10 @@
              x:Class="KoelkastApp.AccountSettingsPage">
     <ContentPage.Content>
         <StackLayout>
+            <Entry
+                Placeholder="Gebruikersnaam"/>
+            <Entry
+                Placeholder="Wachtwoord"/>
             <Button
                 x:Name="SaveSettingBtn"
                 Text="instellingen opslaan"

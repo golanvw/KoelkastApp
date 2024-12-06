@@ -22,7 +22,10 @@ namespace KoelkastApp
         protected void BarcodesDetected(object sender, BarcodeDetectionEventArgs e)
         {
             foreach (var barcode in e.Results)
-                Console.WriteLine($"Barcodes: {barcode.Format} -> {barcode.Value}");
+                if (barcode.Value == "coolkast")
+                    Navigation.PushAsync(new KoelkastPage(NavigationTarget));
+                else
+                    DisplayAlert("Fout", "invalide qr code", "OK");
         }
 
         private void NavigateBtn_Clicked(object sender, EventArgs e)

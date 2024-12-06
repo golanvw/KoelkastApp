@@ -3,11 +3,49 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="KoelkastApp.GroceryListPage">
     <ContentPage.Content>
-        <StackLayout>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            
             <Label Text="Boodschappenlijst" 
                 HorizontalOptions="CenterAndExpand"
-                FontSize="Large"
+                FontSize="35"
                 FontAttributes="Bold"/>
-        </StackLayout>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="150"/>
+                </Grid.ColumnDefinitions>
+                <BoxView
+                    Grid.ColumnSpan="3"/>
+                <Label
+                    Margin="2"
+                    Text="Product 1"
+                    FontSize="35"
+                    Grid.Column="0"
+                    BackgroundColor="White"/>
+                <Button
+                    Margin="0,2,0,2"
+                    Text="+"
+                    FontSize="20"
+                    FontAttributes="Bold"
+                    Grid.Column="1"
+                    CornerRadius="0"
+                    x:Name="RefillBtn"
+                    Clicked="RefillBtn_Clicked"/>
+                <Label
+                    Margin="2"
+                    Text="Minimaal 4 Flessen"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    FontSize="20"
+                    LineBreakMode="WordWrap"
+                    Grid.Column="2"
+                    BackgroundColor="White"/>
+            </Grid>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

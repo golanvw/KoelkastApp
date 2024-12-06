@@ -32,7 +32,7 @@
             Navigation.PushAsync(new GroceryListPage());
         }
 
-        private void SettingsButton_Clicked(object sender, EventArgs e)
+        private void SettingsBtn_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new KoelkastSettingsPage());
         }
@@ -50,6 +50,11 @@
         private void AccountSettingBtn_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new AccountSettingsPage());
+        }
+
+        private void KoelkastBtn_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new CategoryPage());
         }
     }
 }
