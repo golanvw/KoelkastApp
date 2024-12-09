@@ -4,6 +4,11 @@
              x:Class="KoelkastApp.UsePage">
     <ContentPage.Content>
         <StackLayout>
+            <Label
+                Text="Verbruik aantal"/>
+            <Entry
+                x:Name="UseAmount"
+                Placeholder="Aantal"/>
             <Button
                 x:Name="SaveUseBtn"
                 Text="verbruiken"

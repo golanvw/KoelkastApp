@@ -3,19 +3,34 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="KoelkastApp.CategoryPage">
     <ContentPage.Content>
-        <StackLayout>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Button Style="{StaticResource Koelkast}"
+                    x:Name="CategoryBtn"
+                    Text="categorie 1"
+                    Clicked="CategoryBtn_Clicked"
+                    Grid.Column="0"/>
+                <Button
+                    x:Name="SettingsBtn"
+                    Text="instellingen"
+                    Clicked="SettingsBtn_Clicked"
+                    Grid.Column="1"/>
+
+            </Grid>
             <Button
-                x:Name="CategoryBtn"
-                Text="categorie 1"
-                Clicked="CategoryBtn_Clicked"/>
-            <Button
-                x:Name="SettingsBtn"
-                Text="instellingen"
-                Clicked="SettingsBtn_Clicked"/>
-            <Button
+                Margin="0,20,0,0"
                 x:Name="CreateCatergoryBtn"
                 Text="+ maak nieuwe categorie"
-                Clicked="CreateCatergoryBtn_Clicked"/>
-        </StackLayout>
+                Clicked="CreateCatergoryBtn_Clicked"
+                Grid.Row="1"/>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

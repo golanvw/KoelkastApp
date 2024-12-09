@@ -4,6 +4,11 @@
              x:Class="KoelkastApp.ProductSettingsPage">
     <ContentPage.Content>
         <StackLayout>
+            <Label
+                Text="Product naam"/>
+            <Entry
+                x:Name="ProductName"
+                Placeholder="Product Naam"/>
             <Button
                 x:Name="SaveSettingsBtn"
                 Text="instellingen opslaan"

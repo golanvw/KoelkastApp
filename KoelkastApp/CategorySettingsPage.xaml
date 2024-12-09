@@ -4,6 +4,11 @@
              x:Class="KoelkastApp.CategorySettingsPage">
     <ContentPage.Content>
         <StackLayout>
+            <Label
+                Text="Categorie naam"/>
+            <Entry
+                x:Name="CatergoryName"
+                Placeholder="Categorie naam"/>
             <Button
                 x:Name="SaveSettingsBtn"
                 Text="instellingen opslaan"

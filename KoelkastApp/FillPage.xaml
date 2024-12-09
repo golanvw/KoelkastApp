@@ -4,6 +4,11 @@
              x:Class="KoelkastApp.FillPage">
     <ContentPage.Content>
         <StackLayout>
+            <Label
+                Text="Bijvul aantal"/>
+            <Entry
+                x:Name="FillAmount"
+                Placeholder="Aantal"/>
             <Button
                 x:Name="SaveFillBtn"
                 Text="bijvullen"

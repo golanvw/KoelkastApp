@@ -3,23 +3,56 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="KoelkastApp.ProductPage">
     <ContentPage.Content>
-        <StackLayout>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Label
+                    Text="Product 1"
+                    Grid.Row="0"
+                    Grid.ColumnSpan="2"
+                    FontSize="30"
+                    HorizontalOptions="Center"/>
+                <Label
+                    Text="Voorraad 6 flessen"
+                    Grid.Row="0"
+                    Grid.Column="2"
+                    FontSize="20"/>
+                <Button
+                    x:Name="SettingsBtn"
+                    Text="★"
+                    Clicked="SettingsBtn_Clicked"
+                    Grid.Row="1"/>
+                <Button
+                    x:Name="FillBtn"
+                    Text="Bijvullen"
+                    Clicked="FillBtn_Clicked"
+                    Grid.Row="1"
+                    Grid.Column="1"/>
+                <Button
+                    x:Name="UseBtn"
+                    Text="verbruiken"
+                    Clicked="UseBtn_Clicked"
+                    Grid.Row="1"
+                    Grid.Column="2"/>
+            </Grid>
             <Button
-                x:Name="SettingsBtn"
-                Text="instellingen"
-                Clicked="SettingsBtn_Clicked"/>
-            <Button
-                x:Name="FillBtn"
-                Text="Bijvullen"
-                Clicked="FillBtn_Clicked"/>
-            <Button
-                x:Name="UseBtn"
-                Text="verbruiken"
-                Clicked="UseBtn_Clicked"/>
-            <Button
+                Margin="0,20,0,0"
                 x:Name="CreateProductBtn"
                 Text="+ nieuw product"
-                Clicked="CreateProductBtn_Clicked"/>
-        </StackLayout>
+                Clicked="CreateProductBtn_Clicked"
+                Grid.Row="1"/>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>
