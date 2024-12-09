@@ -7,13 +7,20 @@
         <VerticalStackLayout
             Padding="30,0"
             Spacing="25">
+            <Label
+                Padding="30,-90,0,-60"
+                Text="Coolkast"
+                HorizontalOptions="Center"
+                FontSize="210"
+                FontFamily="DeathMohawk"/>
             <Image
-                Source="dotnet_bot.png"
-                HeightRequest="185"
-                Aspect="AspectFit"
-                SemanticProperties.Description="dot net bot in a hovercraft number nine" />
+                IsOpaque="True"
+                Source="splash.png"
+                HeightRequest="345"
+                Aspect="AspectFill" />
 
             <Label
+                Padding="30,-10,0,-0"
                 Text="Welkom bij de koelkast app"
                 Style="{StaticResource Headline}"
                 SemanticProperties.HeadingLevel="Level1" />
@@ -21,14 +28,17 @@
             <Button
                 x:Name="CreateAccBtn"
                 Text="Account maken"
-                Clicked="CreateAccBtn_Clicked"/>
+                Clicked="CreateAccBtn_Clicked"
+                FontSize="20"
+                FontAttributes="Bold"/>
 
             <Button
                 x:Name="LoginBtn"
                 Text="Inloggen" 
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="LoginClicked"
-                HorizontalOptions="Fill" />
+                FontSize="20"
+                FontAttributes="Bold"/>
         </VerticalStackLayout>
     </ScrollView>
 

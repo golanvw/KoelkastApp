@@ -10,7 +10,8 @@
 
         private void CreateAccBtn_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new KoelkastPage(Username.Text));
+            if(Username.Text != "" && Password.Text != "")
+                Navigation.PushAsync(new KoelkastPage(Username.Text));
         }
     }
 }

@@ -15,6 +15,7 @@ namespace KoelkastApp
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+                    fonts.AddFont("DeathMohawk.otf", "DeathMohawk");
                 });
 
 #if DEBUG

@@ -16,7 +16,7 @@ namespace KoelkastApp
 
         private void RefillBtn_Clicked(object sender, EventArgs e)
         {
-
+			Navigation.PushAsync(new FillPage ());
         }
     }
 }
