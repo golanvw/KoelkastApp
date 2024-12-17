@@ -4,6 +4,11 @@
              x:Class="KoelkastApp.CreateCategoryPage">
     <ContentPage.Content>
         <StackLayout>
+            <Label
+                Text="Categorie naam"/>
+            <Entry
+                x:Name="CatergoryName"
+                Placeholder="Categorie naam"/>
             <Button
                 x:Name="CreateBtn"
                 Text="Aanmaken"

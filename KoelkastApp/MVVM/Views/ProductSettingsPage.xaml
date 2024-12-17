@@ -7,8 +7,15 @@
             <Label
                 Text="Product naam"/>
             <Entry
-                x:Name="ProductName"
                 Placeholder="Product Naam"/>
+            <Label
+                Text="Product prijs"/>
+            <Entry
+                Placeholder="Product prijs"/>
+            <Label
+                Text="Minimum aantal"/>
+            <Entry
+                Placeholder="Minimum aantal"/>
             <Button
                 x:Name="SaveSettingsBtn"
                 Text="instellingen opslaan"

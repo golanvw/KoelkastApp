@@ -68,61 +68,70 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Microsoft.Maui.Controls" Version="9.0.10" />
+		<PackageReference Include="Bogus" Version="35.6.1" />
+		<PackageReference Include="Microsoft.Maui.Controls" Version="9.0.21" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="9.0.0" />
+		<PackageReference Include="PropertyChanged.Fody" Version="4.1.0" />
+		<PackageReference Include="sqlite-net-pcl" Version="1.9.172" />
+		<PackageReference Include="SQLitePCLRaw.bundle_green" Version="2.1.10" />
+		<PackageReference Include="SQLitePCLRaw.provider.dynamic_cdecl" Version="2.1.10" />
 		<PackageReference Include="ZXing.Net.Maui" Version="0.4.0" />
 		<PackageReference Include="ZXing.Net.Maui.Controls" Version="0.4.0" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="AccountSettingsPage.xaml">
+	  <MauiXaml Update="MVVM\Views\AccountSettingsPage.xaml">
 	    <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="CategoryPage.xaml">
+	  <MauiXaml Update="MVVM\Views\CategoryPage.xaml">
 	    <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="CategorySettingsPage.xaml">
+	  <MauiXaml Update="MVVM\Views\CategorySettingsPage.xaml">
 	    <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="CreateAccPage.xaml">
+	  <MauiXaml Update="MVVM\Views\CreateAccPage.xaml">
 	    <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="CreateCategoryPage.xaml">
+	  <MauiXaml Update="MVVM\Views\CreateCategoryPage.xaml">
 	    <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="CreateKoelkastPage.xaml">
+	  <MauiXaml Update="MVVM\Views\CreateKoelkastPage.xaml">
 	    <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="CreateProductPage.xaml">
+	  <MauiXaml Update="MVVM\Views\CreateProductPage.xaml">
 	    <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="FillPage.xaml">
+	  <MauiXaml Update="MVVM\Views\FillPage.xaml">
 	    <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="GroceryListPage.xaml">
+	  <MauiXaml Update="MVVM\Views\GroceryListPage.xaml">
 	    <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="KoelkastPage.xaml">
+	  <MauiXaml Update="MVVM\Views\KoelkastPage.xaml">
 	    <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="KoelkastSettingsPage.xaml">
+	  <MauiXaml Update="MVVM\Views\KoelkastSettingsPage.xaml">
 	    <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="LoginPage.xaml">
+	  <MauiXaml Update="MVVM\Views\LoginPage.xaml">
 	    <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="ProductPage.xaml">
+	  <MauiXaml Update="MVVM\Views\ProductPage.xaml">
 	    <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="ProductSettingsPage.xaml">
+	  <MauiXaml Update="MVVM\Views\ProductSettingsPage.xaml">
 	    <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="ScanQRPage.xaml">
+	  <MauiXaml Update="MVVM\Views\ScanQRPage.xaml">
 	    <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="UsePage.xaml">
+	  <MauiXaml Update="MVVM\Views\UsePage.xaml">
 	    <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
 	  </MauiXaml>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="MVVM\ViewModels\" />
 	</ItemGroup>
 
 </Project>

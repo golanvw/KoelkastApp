@@ -4,6 +4,10 @@
              x:Class="KoelkastApp.KoelkastSettingsPage">
     <ContentPage.Content>
         <StackLayout>
+            <Label
+                Text="Koelkast naam"/>
+            <Entry
+                Placeholder="Koelkast naam"/>
             <Button
                 x:Name="SaveSettingsBtn"
                 Text="instellingen opslaan"
