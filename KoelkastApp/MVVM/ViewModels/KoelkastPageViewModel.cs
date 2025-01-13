@@ -32,6 +32,8 @@ namespace KoelkastApp.MVVM.ViewModels
 
         public KoelkastPageViewModel()
         {
+            Refresh();
+            GenerateNewKoelkast();
             AddOrUpdateCommand = new Command(async () =>
             {
                 App.KoelkastRepo.AddOrUpdate(CurrentKoelkast);

@@ -53,6 +53,11 @@
                 Text="+ nieuw product"
                 Clicked="CreateProductBtn_Clicked"
                 Grid.Row="1"/>
+            <Button
+                Margin=" 0,20,0,0"
+                x:Name="DiscountPageBtn"
+                Text="AanbiedingChecker"
+                Clicked="DiscountPageBtn_Clicked"/>
         </Grid>
     </ContentPage.Content>
 </ContentPage>

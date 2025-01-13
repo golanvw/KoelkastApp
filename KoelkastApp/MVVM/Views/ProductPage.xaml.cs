@@ -1,4 +1,5 @@
-﻿using System;
+﻿using KoelkastApp.MVVM.Views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -32,6 +33,11 @@ namespace KoelkastApp
         private void CreateProductBtn_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new CreateProductPage());
+        }
+
+        private void DiscountPageBtn_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new DiscountCheckerPage());
         }
     }
 }

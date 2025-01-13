@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KoelkastApp.MVVM.Views.DiscountCheckerPage">
+    <ContentPage.Content>
+        <StackLayout
+            HorizontalOptions="Center"
+            VerticalOptions="Center">
+            <Label
+                Text="Check of je favoriete Bier in de aanbieding is!"/>
+            <Label
+                Text="Deze bieren kun je checken: hertogjan, grolsch, kornuit, brand, warsteiner, bud, heineken, jupiler, alfa, bavaria, amstel, gulpener"/>
+            <Entry
+                x:Name="BeerBrandEntry"
+                Placeholder="naam bier"/>
+            <Button
+                x:Name="SearchBeerBrandBtn"
+                Text="zoek"
+                Clicked="SearchBeerBrandBtn_Clicked"/>
+            <!--<Picker x:Name="pickerBrand"
+                Title="Selecteer uw bier"
+                    SelectedIndexChanged="pickerBrand_SelectedIndexChanged">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>hertogjan</x:String>
+                        <x:String>grolsch</x:String>
+                        <x:String>kornuit</x:String>
+                        <x:String>brand</x:String>
+                        <x:String>warsteiner</x:String>
+                        <x:String>bud</x:String>
+                        <x:String>heineken</x:String>
+                        <x:String>jupiler</x:String>
+                        <x:String>alfa</x:String>
+                        <x:String>bavaria</x:String>
+                        <x:String>amstel</x:String>
+                        <x:String>gulpener</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>-->
+
+            <ScrollView>
+                <StackLayout>
+                    <ListView
+                        x:Name="BeerListView"
+                        SeparatorColor="Purple">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="auto"/>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="auto"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Label
+                                            Grid.Column="1"
+                                            Text="{Binding Brand}"/>
+                                    </Grid>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+            </ScrollView>   
+            <Label
+                Text="Check of een winkel in uw buurt bier in de aanbieding heeft!"/>
+            <Picker x:Name="pickerStore"
+                Title="Selecteer uw winkel">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>albertheijn</x:String>
+                        <x:String>coop</x:String>
+                        <x:String>plus</x:String>
+                        <x:String>spar</x:String>
+                        <x:String>boons</x:String>
+                        <x:String>hoogvliet</x:String>
+                        <x:String>dirk</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>
