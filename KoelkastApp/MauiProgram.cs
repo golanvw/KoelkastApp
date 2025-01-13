@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using KoelkastApp.Repositories;
+using Microsoft.Extensions.Logging;
 using ZXing.Net.Maui.Controls;
 
 namespace KoelkastApp
@@ -18,6 +19,7 @@ namespace KoelkastApp
                     fonts.AddFont("DeathMohawk.otf", "DeathMohawk");
                 });
 
+            builder.Services.AddSingleton<KoelkastRepository>();
 #if DEBUG
     		builder.Logging.AddDebug();
 #endif

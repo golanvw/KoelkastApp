@@ -1,6 +1,7 @@
 ﻿using SQLite;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,5 +24,10 @@ namespace KoelkastApp
                 return Path.Combine(FileSystem.AppDataDirectory, DBFileName);
             }
         }
+
+        //api constants
+        public const string BEER_BY_BRAND = "https://kratjes.net/api/?brand={0}";
+        public const string BEER_BY_STORE = "https://kratjes.net/api/?supermarket={0}";
+
     }
 }
